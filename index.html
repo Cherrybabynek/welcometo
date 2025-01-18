@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cherry's Special Spot</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #1e1e2f; /* Nền tối */
+        font-family: "Courier New", Courier, monospace;
+        color: #ffffff; /* Màu chữ mặc định */
+      }
+
+      .content {
+        text-align: center;
+        background: linear-gradient(145deg, #2e2e38, #3a3a45);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6),
+          0 0 15px rgba(255, 255, 255, 0.1);
+        width: 90%;
+        max-width: 400px;
+        animation: borderGlow 3s infinite; /* Hiệu ứng viền nhấp nháy */
+      }
+
+      .content img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 15px;
+        border: 5px solid transparent; /* Viền nhấp nháy */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        animation: borderBlink 2s infinite;
+      }
+
+      @keyframes borderBlink {
+        0% {
+          border-color: #ff4500;
+        }
+        25% {
+          border-color: #ffd700;
+        }
+        50% {
+          border-color: #00ff00;
+        }
+        75% {
+          border-color: #1e90ff;
+        }
+        100% {
+          border-color: #ff4500;
+        }
+      }
+
+      .detail-header h2 {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(45deg, #ff4500, #ffd700, #00ff00, #1e90ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textColorChange 3s infinite;
+        margin-bottom: 20px;
+      }
+
+      @keyframes textColorChange {
+        0% {
+          background-position: 0%;
+        }
+        50% {
+          background-position: 100%;
+        }
+        100% {
+          background-position: 0%;
+        }
+      }
+
+      .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px 0;
+        color: #ffd700; /* Màu chữ vàng */
+      }
+
+      .content a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: linear-gradient(145deg, #00ff00, #1e90ff);
+        border-radius: 10px;
+        color: #000000; /* Màu chữ trắng */
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease;
+      }
+
+      .content a:hover {
+        background: linear-gradient(145deg, #ff4500, #ffd700);
+        color: #000; /* Màu chữ đen khi hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="detail-header">
+        <h2>💖 Cherry's Special Spot 💖</h2>
+      </div>
+      <img
+        src="https://i.ibb.co/d4TqMXq/taoanhdep-lam-net-anh-92929.webp"
+        alt="Cherry's Picture"
+      />
+      <p>Chào mừng bạn đến với không gian đặc biệt mà Cherry đã chuẩn bị! 💕</p>
+      <p>Cherry đang đợi bạn ở một nơi bí mật... 🥰</p>
+      <a href="https://t.me/CHERRYANHNGUYEN24">Kết nối ngay</a>
+    </div>
+  </body>
+</html>
